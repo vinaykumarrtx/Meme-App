@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Generate from './components/Generate';
+import Tag from './components/Tag';
+import Spinner from './components/Spinner';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='background min-w-screen min-h-screen flex flex-col items-center justify-centre overflow-hidden'>
+    <div className='bg-white  w-11/12 rounded-md  text-4xl text-center py-2 mt-[40px]  font-bold '>RANDOM GIFS</div>
+    
+    <Generate></Generate>
+    <Tag></Tag>
+    
+    
+     
+    
     </div>
   );
 }
